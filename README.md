@@ -1,1 +1,1 @@
-# rsd-specification
+# rsd2-specification
