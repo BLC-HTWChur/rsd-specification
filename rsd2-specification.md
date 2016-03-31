@@ -6,7 +6,7 @@ The goal of this specification is simple. It allows client applications to find 
 
 The purpose of this binding is to simplify the discovery process for client applications using named service protocols.
 
-This specification diverts from the original XML-based specifications in three directions.
+This specification diverts from the original XML-based specifications in three areas.
 
 1. It adds information on the transport protocol.
 2. It allows an attribute-free syntax.
@@ -28,7 +28,6 @@ This specification diverts from the original XML-based specifications in three d
 
 > Communicating with services requires knowledge about the serivce whereabouts and settings.
 > Specifically, discovering the "Path To Service" setting, but more generally where to point for services is a common issue.
-
 From [RSD specification 1.0.0](https://github.com/danielberlinger/rsd).
 
 Client applications may have more specific needs when connecting to services.
@@ -234,7 +233,7 @@ apiLink: ```api/```
 
 * The api can be accessed via ```http://example.com/service/api/```
 
-## HTML Integration
+## HTML integration
 
 An HTML page may include pointers to RSD files using the link tag.
 
@@ -246,7 +245,7 @@ For the different formats, an individual link can be provided.
 <link rel="ServiceAPI" type="application/rsd+yaml" title="RSD" href="http://example.com/rsd.yaml">
 ```
 
-## Host-based Discovery
+## Host-based discovery
 
 Alternativey, HTML link discovery, a host may also expose the RSD to external parties. A hosts may expose the supported RSDs using a ```services.txt``` file.
 
@@ -344,7 +343,7 @@ The following example shows a RSD in attribute binding using legacy mappings.
 </rsd>
 ```
 
-#### Hierarchical XML Binding
+#### Hierarchical XML binding
 
 The Hierachical XML Binding creates a direct link to the other formats of the information model.
 
@@ -380,7 +379,7 @@ The Hierachical XML Binding creates a direct link to the other formats of the in
 
 The hierarchical XML binding has no counterpart in the original specification. Therefore, legacy mappings are forbidden.
 
-### JSON Binding
+### JSON binding
 
 The JSON binding replaces elements of the information model with their respective identifiers. Consequently, the parent element of the information model is missing in this representation.
 
@@ -395,7 +394,7 @@ The JSON binding replaces elements of the information model with their respectiv
       "apiLink": "http://example.com/xml/rpc/url",
       "preferred": "true",
       "engineId": "123abc"
-    }
+    },
     "Conversant": {
       "apiLink": "xml/rpc/url",
       "preferred": "false",
@@ -411,7 +410,7 @@ The JSON binding replaces elements of the information model with their respectiv
 }
 ```
 
-### YAML Binding
+### YAML binding
 
 Similar to the JSON binding, the YAML binding mapps the Identifiers of the information model to the data keys. Consequently, the parent element of the information model is missing in this representation.
 
@@ -443,8 +442,13 @@ service:
 
 [RSD Specification 1.0.0 using XML](https://github.com/danielberlinger/rsd)
 
-## Copyright & Disclaimer
+## Copyright & disclaimer
 
-The authors: Christian Glahn (Blended Learning Center HTW Chur)
+### The authors:
+
+* Christian Glahn (Blended Learning Center HTW Chur)
+
+
+### License
 
 This document is released unter [Creative Commons 4.0 Attribution-ShareAlike](https://creativecommons.org/licenses/by-sa/4.0/legalcode).
