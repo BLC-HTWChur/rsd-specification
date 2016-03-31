@@ -16,7 +16,7 @@ This specification diverts from the original XML-based specifications in three d
 
 * [The Problem](#the-problem)
 * [The RSD Approach](#the-rsd-approach)
-* [Information Model](#informaton-model)
+* [Information Model](#information-model)
 * [Service discovery via relative links](#service-discovery-via-relative-links)
 * [HTML Integration](#html-integration)
 * [Server-based Discovery](#server-based-discovery)
