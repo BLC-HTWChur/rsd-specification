@@ -28,7 +28,7 @@ This specification diverts from the original XML-based specifications in three a
 
 > Communicating with services requires knowledge about the serivce whereabouts and settings.
 > Specifically, discovering the "Path To Service" setting, but more generally where to point for services is a common issue.
-From [RSD specification 1.0.0](https://github.com/danielberlinger/rsd).
+(From [RSD specification 1.0.0](https://github.com/danielberlinger/rsd).)
 
 Client applications may have more specific needs when connecting to services.
 Some clients may require specific transport protocols, such as SOAP, XML-RPC, WebDAV, or REST.
@@ -75,7 +75,7 @@ A Service
 
 ### engineLink
 
-The engineLink contains an URI, which points to the root of the engine. This link might be hosted on a different host or domain. The engineLink is mandatory for the RSD. However, the engineLink might be empty, but in this case all apiLinks
+The engineLink contains an URI, which points to the root of the engine. This link might be hosted on a different host or domain. The engineLink is mandatory for the RSD. However, the engineLink might be empty, but in this case all apiLinks have to be provided as absolute URIs.
 
 ### apis
 
