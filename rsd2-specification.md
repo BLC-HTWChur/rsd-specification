@@ -88,7 +88,9 @@ The apis contains a list of Links to API. Each API in the list can appear only o
 
 ### engineName
 
-Optional human readable name of the service engine. This name might be used for displaying service related information in an UI so users can identify the service.
+Optional human readable name of the service engine. This name might be used for displaying service related information in an UI so users can identify the service. 
+
+The engineName should refer to the engine instance rather than the engine platform in a way that if there are two engines of the same platform, users can distinguish the two engines via their engineName. 
 
 ### engineId
 
