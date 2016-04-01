@@ -1,6 +1,6 @@
 # Really Simple Discoverability 2.0 Information Model and Binding
 
-Really Simple Discoverability is a way to help client software find the services needed to read, edit, or "work with" web-based software.
+Really Simple Discoverability is a way to help client software find web-service APIs on a server that are needed to read, edit, or "work with" web-based components and software.
 
 The goal of this specification is simple. It allows client applications to find web-service APIs for a domain.
 
