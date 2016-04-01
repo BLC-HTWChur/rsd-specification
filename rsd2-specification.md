@@ -273,7 +273,13 @@ RSD can be mapped onto different data formats, including but not limited to XML,
 
 ### XML binding
 
-There are two possible XML Bindings. The attribute binding or the hierarchical binding.
+There are two possible XML Bindings. 
+* Attribute binding
+* Hierarchical binding.
+
+The hierarchical binding is preferred, because it maps more directly into other bindings.
+
+While the two bindings could be used within the same service definition, implementers need to choose which binding is used. As soon one binding is detected, RSD engines should reject API definitions using the other binding. 
 
 All RSD XML documents have an ```<rsd>``` root element. The rsd element contains a version and a namespace definition. The version for documents following this specification is always ```2.0```. The namespace definition is ```http://github.com/rsd-spec/rsd```.
 
