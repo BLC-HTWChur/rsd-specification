@@ -20,7 +20,7 @@ This specification diverts from the original XML-based specifications in three a
 * [Service discovery via relative links](#service-discovery-via-relative-links)
 * [HTML Integration](#html-integration)
 * [Server-based Discovery](#server-based-discovery)
-* [Language bindings](#language-binding)
+* [Language bindings](#language-bindings)
 * [References](#references)
 * [Copyright & Disclaimer](#copyright--disclaimer)
 
