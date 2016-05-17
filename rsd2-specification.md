@@ -49,7 +49,7 @@ The simplest RSD description consists of an engine link and a list of supported 
 
 For SOAP Services the WSDL specification serves a similar purpose.
 The main difference to WSDL/UDDI is RSD's openness regarding different service protocols.
-While WDSL/UDDI allows to specify the entire service API and service behaviour, RSD simply provides pointers to individual services.
+While WDSL/UDDI allows to specify the entire service API and service behaviour, RSD simply provides pointers to individual service end-points.
 With RSD service settings are optional.
 
 ## Information Model
