@@ -242,9 +242,9 @@ An HTML page may include pointers to RSD files using the link tag.
 For the different formats, an individual link can be provided.
 
 ```HTML
-<link rel="ServiceAPI" type="application/rsd+xml" title="RSD" href="http://example.com/rsd.xml">
-<link rel="ServiceAPI" type="application/rsd+json" title="RSD" href="http://example.com/rsd.json">
-<link rel="ServiceAPI" type="application/rsd+yaml" title="RSD" href="http://example.com/rsd.yaml">
+<link rel="ServiceAPI" type="x-application/rsd+xml" title="RSD" href="http://example.com/rsd.xml">
+<link rel="ServiceAPI" type="x-application/rsd+json" title="RSD" href="http://example.com/rsd.json">
+<link rel="ServiceAPI" type="x-application/rsd+yaml" title="RSD" href="http://example.com/rsd.yaml">
 ```
 
 ## Host-based discovery
