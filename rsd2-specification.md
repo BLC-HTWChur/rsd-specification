@@ -262,9 +262,9 @@ Each entry in this file needs to be stored in a separate line.
 ### Example services.txt
 
 ```
-application/rsd+xml; http://example.com/rsd.xml
-application/rsd+json; http://example.com/rsd.json
-application/rsd+yaml; http://example.com/rsd.yaml
+x-application/rsd+xml; http://example.com/rsd.xml
+x-application/rsd+json; http://example.com/rsd.json
+x-application/rsd+yaml; http://example.com/rsd.yaml
 ```
 
 ## Language bindings
