@@ -242,9 +242,9 @@ An HTML page may include pointers to RSD files using the link tag.
 For the different formats, an individual link can be provided.
 
 ```HTML
-<link rel="ServiceAPI" type="x-application/rsd+xml" title="RSD" href="http://example.com/rsd.xml">
-<link rel="ServiceAPI" type="x-application/rsd+json" title="RSD" href="http://example.com/rsd.json">
-<link rel="ServiceAPI" type="x-application/rsd+yaml" title="RSD" href="http://example.com/rsd.yaml">
+<link rel="ServiceAPI" type="application/x-rsd+xml" title="RSD" href="http://example.com/rsd.xml">
+<link rel="ServiceAPI" type="application/x-rsd+json" title="RSD" href="http://example.com/rsd.json">
+<link rel="ServiceAPI" type="application/x-rsd+yaml" title="RSD" href="http://example.com/rsd.yaml">
 ```
 
 ## Host-based discovery
@@ -262,9 +262,9 @@ Each entry in this file needs to be stored in a separate line.
 ### Example services.txt
 
 ```
-x-application/rsd+xml; http://example.com/rsd.xml
-x-application/rsd+json; http://example.com/rsd.json
-x-application/rsd+yaml; http://example.com/rsd.yaml
+application/x-rsd+xml; http://example.com/rsd.xml
+application/x-rsd+json; http://example.com/rsd.json
+application/x-rsd+yaml; http://example.com/rsd.yaml
 ```
 
 ## Language bindings
