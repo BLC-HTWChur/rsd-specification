@@ -72,6 +72,7 @@ A Service
 | engineId | No | ```String``` | No |
 | homePageLink | No | ```URI``` | No |
 | homePageIcon | No | ```URI``` | No |
+| authorization | No | ```JWK``` | No |
 
 ### engineLink
 
@@ -106,6 +107,12 @@ Contains an optional URI to the web-based UI of the engine. This URI might be on
 
 The homePageIcon is an optional pointer to a image file containing the UI icon that might be used to display next to the engine name to an user.
 
+### authorization
+
+The authorization is an optional object. If present it MUST contain a [JSON Web Key (JWK)](https://tools.ietf.org/html/rfc7517). The authorization SHOULD be only used for customised access. The provided key information should be used by a client for authorized access via OAuth2 and JWT Bearer Tokens.
+
+Public RSD2 documents SHOULD NOT include authorization information.
+
 ### api
 
 | Name | Required | Type | Identifier |
@@ -120,6 +127,7 @@ The homePageIcon is an optional pointer to a image file containing the UI icon t
 | description | No | ```URI``` | No |
 | notes | No | ```String``` | No |
 | settings | No | ```Object``` | No |
+| authorization | No | ```JWK``` | No |
 
 
 ### name
@@ -449,6 +457,8 @@ service:
 ## References
 
 [RSD Specification 1.0.0 using XML](https://github.com/danielberlinger/rsd)
+
+[RFC-7517: JSON Web Key (JWK)] (https://tools.ietf.org/html/rfc7517)
 
 ## Copyright & disclaimer
 
