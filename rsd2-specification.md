@@ -72,7 +72,7 @@ A Service
 | engineId | No | ```String``` | No |
 | homePageLink | No | ```URI``` | No |
 | homePageIcon | No | ```URI``` | No |
-| authorization | No | ```JWK``` | No |
+| authorization | No | ```Complex``` | No |
 
 ### engineLink
 
@@ -109,9 +109,24 @@ The homePageIcon is an optional pointer to a image file containing the UI icon t
 
 ### authorization
 
-The authorization is an optional object. If present it MUST contain a [JSON Web Key (JWK)](https://tools.ietf.org/html/rfc7517). The authorization SHOULD be only used for customised access. The provided key information should be used by a client for authorized access via OAuth2 and JWT Bearer Tokens.
+The authorization is an optional object.
+
+The authorization SHOULD be only used for customised access. The provided information should be used by a client for authorized access via OAuth2.
 
 Public RSD2 documents SHOULD NOT include authorization information.
+
+| Name | Required | Type |
+| :--- | :--- | :--- | :--- |
+| access_token | Yes | ```String```|
+| refresh_token | No | ```String```|
+
+### access_token
+
+An access token provided for authorized access.
+
+### refresh_token
+
+A refresh token provided for extending expired access tokens.
 
 ### api
 
@@ -127,8 +142,7 @@ Public RSD2 documents SHOULD NOT include authorization information.
 | description | No | ```URI``` | No |
 | notes | No | ```String``` | No |
 | settings | No | ```Object``` | No |
-| authorization | No | ```JWK``` | No |
-
+| authorization | No | ```Complex``` | No |
 
 ### name
 
