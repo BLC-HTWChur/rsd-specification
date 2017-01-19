@@ -445,7 +445,6 @@ The JSON binding replaces elements of the information model with their respectiv
 Similar to the JSON binding, the YAML binding mapps the Identifiers of the information model to the data keys. Consequently, the parent element of the information model is missing in this representation.
 
 ```YAML
-service:
   engineName: Blog Munging CMS
   engineLink: http://www.blogmunging.com/
   homePageLink: http://www.userdomain.com/
